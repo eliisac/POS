@@ -1,2 +1,1 @@
-# POS
-POS project
+#POS project
