@@ -1,9 +1,9 @@
 #pragma once
-
 #include "IUser.h"
+#include "file.h"
 #include <iostream>
 
-class Manager : public IUser
+class Manager : public  IUser
 {
 private:
     /* data */
@@ -12,18 +12,5 @@ public:
     Manager(/* args */);
     ~Manager();
     void Login();
+    void showOrders();
 };
-
-Manager::Manager(/* args */)
-{
-}
-
-Manager::~Manager()
-{
-}
-
-void Manager::Login()
-{
-    std::cout << "Login as a manager " << std::endl;
-}
-

@@ -1,19 +1,11 @@
-#pragma once
 
+#pragma once
 class IUser
 {
 public:
     IUser(/* args */);
-    ~IUser();
+     ~IUser();
     virtual void Login() = 0 ;
 
 };
-
-IUser::IUser(/* args */)
-{
-}
-
-IUser::~IUser()
-{
-}
 
