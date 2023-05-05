@@ -9,6 +9,7 @@ class file
 private:
     ofstream outfile;
     ifstream infile;
+    fstream iofile;
 public:
     file(/* args */);
     ~file();
@@ -16,5 +17,6 @@ public:
     void write(int lastorderid);
     list<Order> read();
     int readid(int id=1000);
+    Order find(int OrderId);
 };
 

@@ -20,17 +20,26 @@ void Cashier::Login()
     //cout << "Press 3 to go to previous screen" << endl;
     int in=-1;
     cin >> in;
-    
+    int orderId=0;
     switch(in)
     {
         case 1: cout << "Add items " << endl; 
                 
                 addRemoveOrder(); 
                 break;
-        case 2: cout << "Enter Order Id " << endl; break;
+        case 2: cout << "Enter Order Id " << endl; 
+                cin >> orderId;
+                recallOrder(orderId);
+                break;
         default: cout << "Invalid Choice " << endl; 
     }
 
+}
+void Cashier::recallOrder(int orderId)
+{
+    file f;
+    Order o = f.find(orderId);
+    o.showdetails();
 }
 
 void Cashier::addRemoveOrder()
