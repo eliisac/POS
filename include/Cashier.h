@@ -14,5 +14,6 @@ public:
     void addOrder( Order & o);
     void removeOrder( Order & o);
     void addRemoveOrder();
+    void addRemoveOrderLoop( Order & o);
     void recallOrder(int orderId);
 };

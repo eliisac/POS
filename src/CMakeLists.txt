@@ -4,5 +4,5 @@ project(POS)
 
 include_directories( "../include" "/usr/local/include/")
 
-add_executable(posapplication main.cpp file.cpp Cashier.cpp Home.cpp Manager.cpp IUser.cpp Order.cpp)
+add_executable(posapplication main.cpp file.cpp Cashier.cpp CashierScreen.cpp HomeScreen.cpp Manager.cpp IUser.cpp Order.cpp ManagerScreen.cpp POSsystem.cpp Screen.cpp)
 

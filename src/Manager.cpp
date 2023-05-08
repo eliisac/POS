@@ -9,6 +9,7 @@ Manager::Manager(/* args */)
 Manager::~Manager()
 {
 }
+
 void Manager::Login()
 {
     using namespace std;
@@ -24,6 +25,7 @@ void Manager::Login()
         default: cout << "Invalid Choice " << endl; 
     }
 }
+
 
 void Manager::showOrders()
 {
